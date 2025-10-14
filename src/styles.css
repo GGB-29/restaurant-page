@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+
+    height: 100vh;
+    background-color: rgb(25, 27, 37);
+
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Merriweather', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+p, span, li {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    
+}
+
+.page-header {
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1.1fr 4fr 2fr 0.1fr;
+    align-items: center;
+    gap: 30px;
+
+    padding: 0 30px;
+    min-width: 1000px;
+}
+
+.page-header > :nth-child(3) {
+    justify-self: end;
+    margin-right: 40px;
+
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #b08d57;
+    transition: color 0.3s, text-decoration-clor 0.3s;
+}
+
+.page-header > :nth-child(3):hover {
+    color: #b08d57;
+    text-decoration-color: #ffffff;
+}
+
+.menu-icon {
+    filter: invert(1);
+
+    min-width: 30px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.nav-menu {
+    min-width: 500px;
+    display: flex;
+    justify-content: ;
+}
+
+.nav-menu button {
+    font-family: 'Open Sans', 'Roboto', 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-right: 50px;
+}
+
+.nav-menu button:hover {
+    color: #b08d57;
+}
