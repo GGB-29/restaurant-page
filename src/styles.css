@@ -99,3 +99,83 @@ button {
 .nav-menu button:hover {
     color: #b08d57;
 }
+
+.content {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+    z-index: 2;
+
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+
+    margin-top: 30px;
+    margin-right: 90px;
+}
+
+.text-box {
+    position: absolute;
+    box-sizing: border-box;
+    top: 10vh;
+    left: -30vw;
+
+    padding: 20px;
+    
+    width: 120%;
+    height: 100%;
+
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    background-color: rgb(163, 142, 20);
+    border-radius: 5px;
+    z-index: 1;
+
+    box-shadow: 10vw 10vh 0 rgb(255, 255, 255, 0.1);
+}
+
+.text-box :nth-child(1) {
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.text-box :nth-child(2) {
+    margin-top: 10px;
+    margin-left: -15vh;
+    font-size: 5.2rem;
+    transform: scaleY(1.2);
+    text-shadow: 6px 6px 0 rgb(163, 142, 20);
+    z-index: 5;
+}
+
+.text-box :last-child {
+    color: #c2bdbd;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    max-width: 40ch;
+}
