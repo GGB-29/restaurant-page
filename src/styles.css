@@ -202,3 +202,22 @@ button {
 .menu-icon:hover {
     filter: invert(100%) sepia(80%) saturate(1500%) hue-rotate(10deg) brightness(90%);
 }
+
+.book-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-table-button {
+    padding: 18px;
+    border: 1px solid rgb(163, 142, 20);
+    box-shadow: 3px 3px 0 rgb(163, 142, 20);
+    color: white;
+    border-radius: 18px;
+}
+
+.book-table-button:hover {
+    background-color: rgb(163, 142, 20);
+    box-shadow: none;
+}
