@@ -135,7 +135,7 @@ button {
     height: auto;
 
     margin-top: 30px;
-    margin-right: 90px;
+    margin-right: 50px;
 }
 
 .text-box {
@@ -156,10 +156,12 @@ button {
     z-index: 1;
 
     box-shadow: 10vw 10vh 0 rgb(255, 255, 255, 0.1);
+
 }
 
 .text-box :nth-child(1) {
     margin-top: 50px;
+    color: #d6cece;
     font-size: 2rem;
     font-weight: 100;
 }
@@ -174,8 +176,29 @@ button {
 }
 
 .text-box :last-child {
-    color: #c2bdbd;
+    color: #d6cece;
     margin-top: 20px;
     font-size: 1.5rem;
     max-width: 40ch;
+}
+
+.arrow-left {
+    width: 60px;
+    filter: invert(1);
+    margin-right: auto;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.arrow-right {
+    width: 60px;
+    filter: invert(1);
+    margin-right: 20px;
+    align-self: center;
+}
+
+.arrow-right:hover, 
+.arrow-left:hover, 
+.menu-icon:hover {
+    filter: invert(100%) sepia(80%) saturate(1500%) hue-rotate(10deg) brightness(90%);
 }
